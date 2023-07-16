@@ -1,0 +1,4 @@
+name: HikariBoilerplate
+version: '${project.version}'
+main: xyz.dmaax.hikariboilerplate.HikariBoilerplate
+api-version: '1.13'
