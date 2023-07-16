@@ -2,7 +2,7 @@ sql:
   enabled: true
   mysql:
     hostname: 'localhost'
-    database: 'rewards'
+    database: 'hcp'
     port: 3306
     username: 'root'
     password: 'root'
