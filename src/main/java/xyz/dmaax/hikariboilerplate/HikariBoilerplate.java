@@ -19,7 +19,7 @@ public final class HikariBoilerplate extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        configManager.save();
     }
 
     public static HikariBoilerplate getInstance() {
