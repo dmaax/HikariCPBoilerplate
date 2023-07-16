@@ -11,6 +11,7 @@ public final class HikariBoilerplate extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        setupConfig();
         plugin = this;
         configManager = new ConfigManager();
         configManager.load();
@@ -24,6 +25,12 @@ public final class HikariBoilerplate extends JavaPlugin {
 
     public static HikariBoilerplate getInstance() {
         return plugin;
+    }
+
+    private void setupConfig() {
+        saveDefaultConfig();
+        getConfig().options().copyDefaults(true);
+        saveConfig();
     }
 
 }
